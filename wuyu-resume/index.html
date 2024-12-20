@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网页</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <a href="../wuyu-space/pages/index.html">← 返回空间</a>
+        </nav>
+        <div class="avatar">
+            <img src="photos/avatar.png" alt="勿语的头像">
+        </div>
+        <h1>勿语</h1>
+        <p class="subtitle">全栈工程师 | Java & Vue</p>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>关于我</h2>
+            <p>我是一名全栈工程师，擅长Java后端开发和Vue前端开发。在企业级应用开发方面有丰富经验，能够独立完成前后端系统的设计与实现。热衷于编写高质量的代码，追求技术创新。</p>
+        </section>
+
+        <section class="skills">
+            <h2>专业技能</h2>
+            <ul>
+                <li>Spring Boot</li>
+                <li>MyBatis-Plus</li>
+                <li>Spring Cloud</li>
+                <li>MySQL</li>
+                <li>Redis</li>
+                <li>RabbitMQ</li>
+                <li>Vue.js</li>
+                <li>JavaScript</li>
+                <li>HTML5/CSS3</li>
+                <li>Docker</li>
+                <li>Nginx</li>
+                <li>Linux</li>
+                <li>Maven</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>实习经历</h2>
+            <div class="experience-card">
+                <h3>明(山西)健康管理有限公司</h3>
+                <p class="position">Java 开发工程师 | 2024.03 — 2024.06</p>
+                <div class="project">
+                    <h4>博明快药</h4>
+                    <p class="tech-stack">技术架构：SpringBoot + Vue + MySQL + Redis + RabbitMQ</p>
+                    <p class="project-desc">项目描述：面向医药零售行业的SaaS系统，为连锁药店提供完整的业务管理解决方案。</p>
+                    <p class="responsibilities">主要职责：</p>
+                    <ul>
+                        <li>设计并实现店铺资源管理模块，包括视频、音频、图片等多媒体资源的上传、存储和管理功能</li>
+                        <li>基于阿里云OSS实现资源的分布式存储，提高系统的扩展性和可用性</li>
+                        <li>使用Vue3封装通用的资源管理组件，实现了资源预览、上传进度显示等功能，提升了开发效率</li>
+                        <li>优化资源加载性能，实现资源的懒加载和CDN加速，提升用户体验</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>项目经验</h2>
+            <div class="project-card">
+                <h3>易搬家 - 家服务平台</h3>
+                <p class="tech-stack">技术架构：SpringBoot + Vue3 + Element-Plus + MySQL + Redis + 微信小程序</p>
+                <p class="project-desc">项目描述：一个连接用户与搬家服务商的综合性平台，提供在线预约、实时跟踪、评价反馈等功能，通过微信小程序实现便捷的移动端服务。</p>
+                <p>核心贡献：</p>
+                <ul>
+                    <li>设计并实现基于RBAC的权限控制系统，使用Spring Security + JWT实现认证授权，并通过AOP实现细粒度的接口权限控制</li>
+                    <li>实现基于Redis + Lua脚本的分布式限流方案，有效防止恶意请求和DDoS攻击，提升系统安全性</li>
+                    <li>设计并实现订单管理、车型管理、资费计算等核心业务模块，支持多种搬家场景的灵活定价</li>
+                    <li>使用多级缓存策略优化系统性能，通过Redis缓存热点数据，减少数据库压力</li>
+                    <li>集成短信服务(SMS)和对象存储服务(OSS)，实现订单通知、图片存储等功能，提升用户体验</li>
+                    <li>实现接口服务的降级和熔断机制，通过多个第三方接口的冗余策略，提高系统的可用性和稳定性</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>联系方式</h2>
+            <p>邮箱：your.email@example.com</p>
+            <p>电话：+86 xxx xxxx xxxx</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 勿语. 保留所有权利。</p>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <div class="back-to-top">
+        <svg viewBox="0 0 24 24">
+            <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+        </svg>
+    </div>
+
+    <script>
+        // 返回顶部按钮的显示和隐藏
+        const backToTop = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        // 点击返回顶部
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 

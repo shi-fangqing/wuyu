@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章列表 - 勿语的空间</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/responsive.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">勿语的空间</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="#" class="active">文章</a></li>
+                <li><a href="../projects/list.html">项目</a></li>
+                <li><a href="../../../wuyu-resume/index.html">关于我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="posts-section">
+            <h2>文章列表</h2>
+            <div class="search-container">
+                <input type="text" id="globalSearch" placeholder="搜索文章...">
+                <div class="search-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+            <div class="posts-filter">
+                <div class="tags-filter">
+                    <span class="tag active" data-tag="all">全部</span>
+                    <span class="tag" data-tag="代码优化">代码优化</span>
+                    <span class="tag" data-tag="算法">算法</span>
+                    <span class="tag" data-tag="最佳实践">最佳实践</span>
+                </div>
+            </div>
+            <div class="posts-grid">
+                <!-- 文章卡片将通过JavaScript动态生成 -->
+            </div>
+        </section>
+
+        <!-- 文章详情模态框 -->
+        <div class="modal" id="postModal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <article class="post-detail">
+                    <header>
+                        <h2 class="post-title"></h2>
+                        <div class="post-meta">
+                            <span class="date"></span>
+                            <div class="tags"></div>
+                        </div>
+                    </header>
+                    <div class="post-content"></div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">微博</a>
+            <a href="#" target="_blank">知乎</a>
+        </div>
+        <p class="copyright">© 2024 勿语的空间. All rights reserved.</p>
+    </footer>
+
+    <script src="../../lib/marked.min.js"></script>
+    <script src="../../scripts/posts/list.js"></script>
+</body>
+</html> 

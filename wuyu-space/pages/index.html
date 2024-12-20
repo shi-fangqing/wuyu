@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勿语的空间</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">勿语的空间</a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="posts/list.html">文章</a></li>
+                <li><a href="projects/list.html">项目</a></li>
+                <li><a href="../../wuyu-resume/index.html">关于我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="chatSection">
+            <div class="profile">
+                <h1>勿语</h1>
+                <p class="bio">AI智能助手 | 全能帮手</p>
+                <div class="assistant-features">
+                    <div class="feature">
+                        <span class="icon">🤖</span>
+                        <span>智能对话</span>
+                    </div>
+                    <div class="feature">
+                        <span class="icon">📝</span>
+                        <span>代码助手</span>
+                    </div>
+                    <div class="feature">
+                        <span class="icon">💡</span>
+                        <span>问题解答</span>
+                    </div>
+                </div>
+                <div class="hero-description">
+                    <p>基于大语言模型，提供智能对话、代码编写、问题解答等服务</p>
+                    <p>24小时在线，随时为您提供帮助</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="chat-demo" id="chatDemo">
+            <h2>有什么可以帮到你的吗？</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message assistant">
+                        <div class="avatar">🤖</div>
+                        <div class="content">你好！我是勿语，一个智能助手。我可以帮你解答问题、编写代码、进行技术讨论等。请问有什么我可以帮你的吗？</div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <textarea id="userInput" placeholder="输入你的问题... (Shift + Enter 换行)"></textarea>
+                    <button id="sendMessage">发送</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">微博</a>
+            <a href="#" target="_blank">知乎</a>
+        </div>
+        <p class="copyright">© 2024 勿语的空间. All rights reserved.</p>
+    </footer>
+
+    <script src="../lib/marked.min.js"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目列表 - 勿语的空间</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/responsive.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">勿语的空间</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../posts/list.html">文章</a></li>
+                <li><a href="#" class="active">项目</a></li>
+                <li><a href="../../../wuyu-resume/index.html">关于我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <h2>项目列表</h2>
+            <div class="projects-grid">
+                <!-- 项目卡片将通过JavaScript动态生成 -->
+            </div>
+        </section>
+
+        <!-- 项目详情模态框 -->
+        <div class="modal" id="projectModal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <article class="project-detail">
+                    <header>
+                        <h2 class="project-title"></h2>
+                        <div class="project-meta">
+                            <span class="date"></span>
+                            <div class="tech-stack"></div>
+                        </div>
+                    </header>
+                    <div class="project-content"></div>
+                    <div class="project-links">
+                        <a href="#" class="demo-link" target="_blank">在线演示</a>
+                        <a href="#" class="github-link" target="_blank">GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">微博</a>
+            <a href="#" target="_blank">知乎</a>
+        </div>
+        <p class="copyright">© 2024 勿语的空间. All rights reserved.</p>
+    </footer>
+
+    <script src="../../lib/marked.min.js"></script>
+    <script src="../../scripts/projects/list.js"></script>
+</body>
+</html> 
